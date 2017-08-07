@@ -10,7 +10,7 @@ We hope that providing this template will save project setup time and also provi
 
 ## Prerequisites:
 
-- [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/installation.html)
+[Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/installation.html)
 
 ## Usage
 
@@ -29,3 +29,10 @@ You will have to manually configure the bundle id of the main target and test ta
 ## Contents
 
 TBD
+
+## Contributing
+
+Every team member is free to contribute to this template. Just create a fork and then submit a pull request with your changes and explanation what is being done. The iOS team members will then review your PR and merge if justified.
+
+Contributors:
+- Piotr Gorzelany
