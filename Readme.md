@@ -28,7 +28,10 @@ You will have to manually configure the bundle id of the main target and test ta
 
 ## Contents
 
-TBD
+- Standard project structure
+- MainNavigator - responsible for setting up the controller structure at app startup.
+- DeeplinkManager - responsible for handling deeplinks
+- NotificationsManager - responsible for handling notifications
 
 ## Contributing
 
