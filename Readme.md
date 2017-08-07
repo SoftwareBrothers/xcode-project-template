@@ -35,4 +35,5 @@ TBD
 Every team member is free to contribute to this template. Just create a fork and then submit a pull request with your changes and explanation what is being done. The iOS team members will then review your PR and merge if justified.
 
 Contributors:
+
 - Piotr Gorzelany

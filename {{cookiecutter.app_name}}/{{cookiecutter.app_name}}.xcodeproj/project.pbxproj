@@ -76,8 +76,8 @@
 				2A1E77361F384BFC006C84D4 /* AppDelegate.swift */,
 				2AFB31021F3853C6009C4586 /* Resources */,
 				2AFB31071F38542E009C4586 /* SupportingFiles */,
-				2AFB31081F385489009C4586 /* Models */,
-				2A4A990C1F385ABE00074E94 /* Modules */,
+				2AB31D9E1F38740A00B7D1F3 /* Models */,
+				2AB31D9F1F38741400B7D1F3 /* Modules */,
 				2AFB310A1F385A20009C4586 /* Helpers */,
 				2A1E773A1F384BFC006C84D4 /* Main.storyboard */,
 				2A1E773F1F384BFD006C84D4 /* LaunchScreen.storyboard */,
@@ -93,41 +93,61 @@
 			path = "{{cookiecutter.app_name}}Tests";
 			sourceTree = "<group>";
 		};
-		2A4A990B1F385A9800074E94 /* Extensions */ = {
+		2AB31D9E1F38740A00B7D1F3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Extensions;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		2A4A990C1F385ABE00074E94 /* Modules */ = {
+		2AB31D9F1F38741400B7D1F3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		2A4A990D1F385AD100074E94 /* Utilities */ = {
+		2AB31DA01F38742400B7D1F3 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Utilities;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
-		2A4A990E1F385AE500074E94 /* Protocols */ = {
+		2AB31DA11F38742A00B7D1F3 /* Translations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Translations;
+			sourceTree = "<group>";
+		};
+		2AB31DA21F38744600B7D1F3 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		2AB31DA31F38744C00B7D1F3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2AB31DA41F38745300B7D1F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2AFB31021F3853C6009C4586 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2AFB31051F3853E9009C4586 /* Fonts */,
-				2AFB31041F3853E0009C4586 /* Translations */,
+				2AB31DA11F38742A00B7D1F3 /* Translations */,
+				2AB31DA01F38742400B7D1F3 /* Fonts */,
 				2AFB31031F3853D9009C4586 /* Images */,
-				2AFB31061F3853F0009C4586 /* HTML */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -140,27 +160,6 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
-		2AFB31041F3853E0009C4586 /* Translations */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Translations;
-			sourceTree = "<group>";
-		};
-		2AFB31051F3853E9009C4586 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		2AFB31061F3853F0009C4586 /* HTML */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HTML;
-			sourceTree = "<group>";
-		};
 		2AFB31071F38542E009C4586 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,19 +168,12 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		2AFB31081F385489009C4586 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		2AFB310A1F385A20009C4586 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				2A4A990E1F385AE500074E94 /* Protocols */,
-				2A4A990D1F385AD100074E94 /* Utilities */,
-				2A4A990B1F385A9800074E94 /* Extensions */,
+				2AB31DA21F38744600B7D1F3 /* Protocols */,
+				2AB31DA41F38745300B7D1F3 /* Extensions */,
+				2AB31DA31F38744C00B7D1F3 /* Utilities */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
