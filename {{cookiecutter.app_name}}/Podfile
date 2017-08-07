@@ -18,7 +18,7 @@ target '{{cookiecutter.app_name}}' do
     pod 'RxSwift', '~>3.0'
     pod 'RxAlamofire', '~>3.0'
 
-    target '{{cookiecutter.app_name}}' do
+    target '{{cookiecutter.app_name}}Tests' do
         inherit! :search_paths
     end
 end
