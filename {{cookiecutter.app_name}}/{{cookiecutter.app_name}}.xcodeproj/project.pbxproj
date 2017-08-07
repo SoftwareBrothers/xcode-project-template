@@ -11,6 +11,7 @@
 		2A1E773C1F384BFC006C84D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A1E773A1F384BFC006C84D4 /* Main.storyboard */; };
 		2A1E773E1F384BFD006C84D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1E773D1F384BFD006C84D4 /* Assets.xcassets */; };
 		2A1E77411F384BFD006C84D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A1E773F1F384BFD006C84D4 /* LaunchScreen.storyboard */; };
+		2A9222821F38797600A648E6 /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9222811F38797600A648E6 /* ConfigurationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,9 @@
 		2A1E77421F384BFD006C84D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A1E77471F384BFD006C84D4 /* {{cookiecutter.app_name}}Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "{{cookiecutter.app_name}}Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1E774D1F384BFD006C84D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A9222811F38797600A648E6 /* ConfigurationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
+		2A9222841F387B1D00A648E6 /* {{cookiecutter.app_name}}Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "{{cookiecutter.app_name}}Tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		2ABEE6D21F387FD700531205 /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Configuration.plist; path = "{{cookiecutter.app_name}}/Configuration.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		2A1E774A1F384BFD006C84D4 /* {{cookiecutter.app_name}}Tests */ = {
 			isa = PBXGroup;
 			children = (
+				2A9222841F387B1D00A648E6 /* {{cookiecutter.app_name}}Tests-Bridging-Header.h */,
 				2A1E774D1F384BFD006C84D4 /* Info.plist */,
 			);
 			path = "{{cookiecutter.app_name}}Tests";
@@ -131,6 +136,7 @@
 		2AB31DA31F38744C00B7D1F3 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				2A9222811F38797600A648E6 /* ConfigurationManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -163,6 +169,7 @@
 		2AFB31071F38542E009C4586 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				2ABEE6D21F387FD700531205 /* Configuration.plist */,
 				2A1E77421F384BFD006C84D4 /* Info.plist */,
 			);
 			path = SupportingFiles;
@@ -231,6 +238,7 @@
 					};
 					2A1E77461F384BFD006C84D4 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						TestTargetID = 2A1E77321F384BFC006C84D4;
 					};
 				};
@@ -279,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9222821F38797600A648E6 /* ConfigurationManager.swift in Sources */,
 				2A1E77371F384BFC006C84D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,10 +463,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "{{cookiecutter.app_name}}Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rst-it.--cookiecutter-app-name--Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "{{cookiecutter.app_name}}Tests/HelpersTests/{{cookiecutter.app_name}}Tests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/{{cookiecutter.app_name}}.app/{{cookiecutter.app_name}}";
@@ -469,15 +481,103 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "{{cookiecutter.app_name}}Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rst-it.--cookiecutter-app-name--Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "{{cookiecutter.app_name}}Tests/HelpersTests/{{cookiecutter.app_name}}Tests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/{{cookiecutter.app_name}}.app/{{cookiecutter.app_name}}";
 			};
 			name = Release;
+		};
+		2ABEE6CF1F387C5D00531205 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Staging;
+		};
+		2ABEE6D01F387C5D00531205 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "{{cookiecutter.app_name}}/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rst-it.--cookiecutter-app-name--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		2ABEE6D11F387C5D00531205 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "{{cookiecutter.app_name}}Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rst-it.--cookiecutter-app-name--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "{{cookiecutter.app_name}}Tests/HelpersTests/{{cookiecutter.app_name}}Tests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/{{cookiecutter.app_name}}.app/{{cookiecutter.app_name}}";
+			};
+			name = Staging;
 		};
 /* End XCBuildConfiguration section */
 
@@ -486,6 +586,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A1E774E1F384BFD006C84D4 /* Debug */,
+				2ABEE6CF1F387C5D00531205 /* Staging */,
 				2A1E774F1F384BFD006C84D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -495,6 +596,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A1E77511F384BFD006C84D4 /* Debug */,
+				2ABEE6D01F387C5D00531205 /* Staging */,
 				2A1E77521F384BFD006C84D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -504,6 +606,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A1E77541F384BFD006C84D4 /* Debug */,
+				2ABEE6D11F387C5D00531205 /* Staging */,
 				2A1E77551F384BFD006C84D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
