@@ -12,7 +12,7 @@ We hope that providing this template will save project setup time and also provi
 
 - [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/installation.html)
 
-## Creating a new project from this template
+## Usage
 
 The project uses Cookiecutter for project templating. To create a new project from this template just run:
 
@@ -25,3 +25,7 @@ You will get a prompt to give a new app name. Thats it, you should have a new fo
 ## Additional configuration
 
 You will have to manually configure the bundle id of the main target and test target.
+
+## Contents
+
+TBD
