@@ -8,6 +8,10 @@
 
 import Foundation
 
+/**
+ Use the Configuration.plist file to provide variables dependent on build configuration.
+ An example would be the backend url, where for different build configurations you have different backend urls.
+ */
 class ConfigurationManager {
     
     enum Configuration: String {

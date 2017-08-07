@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A1DD4DF1F389C2200712195 /* DeeplinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1DD4DE1F389C2200712195 /* DeeplinkManager.swift */; };
+		2A1DD4E11F389E2100712195 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1DD4E01F389E2100712195 /* NotificationsManager.swift */; };
 		2A1E77371F384BFC006C84D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E77361F384BFC006C84D4 /* AppDelegate.swift */; };
 		2A1E773E1F384BFD006C84D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1E773D1F384BFD006C84D4 /* Assets.xcassets */; };
 		2A1E77411F384BFD006C84D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A1E773F1F384BFD006C84D4 /* LaunchScreen.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		2A1DD4DE1F389C2200712195 /* DeeplinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkManager.swift; sourceTree = "<group>"; };
+		2A1DD4E01F389E2100712195 /* NotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
 		2A1E77331F384BFC006C84D4 /* {{cookiecutter.app_name}}.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "{{cookiecutter.app_name}}.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1E77361F384BFC006C84D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A1E773D1F384BFD006C84D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A1DD4E21F38A09700712195 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				2A1E773F1F384BFD006C84D4 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 		2A1E772A1F384BFC006C84D4 = {
 			isa = PBXGroup;
 			children = (
@@ -86,7 +96,6 @@
 				2AB31D9E1F38740A00B7D1F3 /* Models */,
 				2AB31D9F1F38741400B7D1F3 /* Modules */,
 				2AFB310A1F385A20009C4586 /* Helpers */,
-				2A1E773F1F384BFD006C84D4 /* LaunchScreen.storyboard */,
 			);
 			path = "{{cookiecutter.app_name}}";
 			sourceTree = "<group>";
@@ -110,6 +119,7 @@
 		2AB31D9F1F38741400B7D1F3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2A1DD4E21F38A09700712195 /* Launch */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -141,6 +151,7 @@
 				2ABEE6D51F3886D700531205 /* MainNavigator.swift */,
 				2A9222811F38797600A648E6 /* ConfigurationManager.swift */,
 				2A1DD4DE1F389C2200712195 /* DeeplinkManager.swift */,
+				2A1DD4E01F389E2100712195 /* NotificationsManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -294,6 +305,7 @@
 				2A9222821F38797600A648E6 /* ConfigurationManager.swift in Sources */,
 				2ABEE6D61F3886D700531205 /* MainNavigator.swift in Sources */,
 				2A1E77371F384BFC006C84D4 /* AppDelegate.swift in Sources */,
+				2A1DD4E11F389E2100712195 /* NotificationsManager.swift in Sources */,
 				2A1DD4DF1F389C2200712195 /* DeeplinkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "{{cookiecutter.app_name}}/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rst-it.--cookiecutter-app-name--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -448,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "{{cookiecutter.app_name}}/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rst-it.--cookiecutter-app-name--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -551,6 +565,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "{{cookiecutter.app_name}}/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rst-it.--cookiecutter-app-name--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
