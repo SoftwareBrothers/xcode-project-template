@@ -1,4 +1,4 @@
-#XCodeProjectTemplate
+##XCodeProjectTemplate
 
 The official project template of the RST-IT iOS team. This template should be the common base for all new projects and ensures common project structure and foundation classes.
 
@@ -19,6 +19,8 @@ The project uses Cookiecutter for project templating. To create a new project fr
 ```
 cookiecutter git@bitbucket.org:rstit/xcodeprojecttemplate.git
 ```
+
+You will get a prompt to give a new app name. Thats it, you should have a new folder with your new app created based on this template!
 
 ## Additional configuration
 
