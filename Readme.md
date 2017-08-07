@@ -9,8 +9,8 @@ When working for early stage startups we frequently have to start new projects f
 We hope that providing this template will save project setup time and also provide a common foundation that each team member will be accustomed to so that you don't have to think and explore the project structure and foundations. They will always be the same.
 
 ## Prerequisites:
-
-[Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/installation.html)
+- [Xcode9 or higher](https://developer.apple.com/xcode/)
+- [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/installation.html)
 
 ## Usage
 
