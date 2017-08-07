@@ -22,7 +22,6 @@ class ConfigurationManager {
     
     private let configurationKey = "Configuration"
     private let configurationDictionaryName = "Configuration"
-    private let configurationDirectory = "SupportingFiles"
     private let backendUrlKey = "backendUrl"
     
     let activeConfiguration: Configuration
