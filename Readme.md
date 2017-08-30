@@ -1,4 +1,4 @@
-##XCodeProjectTemplate
+## XCodeProjectTemplate
 
 The official project template of the RST-IT iOS team. This template should be the common base for all new projects and ensures common project structure and foundation classes.
 
