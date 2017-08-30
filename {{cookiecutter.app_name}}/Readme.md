@@ -19,15 +19,15 @@ pod install
 
 ### Core Dependencies
 
-Fabric
-Crashlytics
-Device
-Kingfisher
-SwiftDate
-RxSwift
-RxAlamofire
-RSTUtils
-SwiftyJSON
+* Fabric
+* Crashlytics
+* Device
+* Kingfisher
+* SwiftDate
+* RxSwift
+* RxAlamofire
+* RSTUtils
+* SwiftyJSON
 
 ## App architecture:
 
