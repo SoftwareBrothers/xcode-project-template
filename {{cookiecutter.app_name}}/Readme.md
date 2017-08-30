@@ -18,7 +18,15 @@ Supports: iOS 9.x and above
 
 ### Core Dependencies
 
-    TODO
+    Fabric
+    Crashlytics
+    Device
+    Kingfisher
+    SwiftDate
+    RxSwift
+    RxAlamofire
+    RSTUtils
+    SwiftyJSON
 
 ## App architecture:
 
