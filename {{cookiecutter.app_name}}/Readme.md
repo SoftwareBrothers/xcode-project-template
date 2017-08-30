@@ -33,7 +33,7 @@ SwiftyJSON
 
 Model-View-ViewModel(MVVM)
 
-![MVVM](http://i.imgur.com/NHRPFsE.png)
+![MVVM](http://i.imgur.com/gGvGSCa.png)
 
 # Project structure:
 
