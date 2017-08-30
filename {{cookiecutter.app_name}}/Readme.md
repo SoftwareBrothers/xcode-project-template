@@ -4,41 +4,41 @@ Supports: iOS 9.x and above
 
 ## Branches:
 
-    * master - stable app releases
-    * develop - development branch, merge your feature branches here
+* master - stable app releases
+* develop - development branch, merge your feature branches here
 
 ## Dependencies:
 
-    All dependencies are provided using CocoaPods. If for some reason dependency can't be added as pod, it will be in Library folder as source files.
+All dependencies are provided using CocoaPods. If for some reason dependency can't be added as pod, it will be in Library folder as source files.
 
-    To install the dependencies run:
+To install the dependencies run:
 
-    ```
-    pod install
-    ```
+```
+pod install
+```
 
 ### Core Dependencies
 
-    Fabric
-    Crashlytics
-    Device
-    Kingfisher
-    SwiftDate
-    RxSwift
-    RxAlamofire
-    RSTUtils
-    SwiftyJSON
+Fabric
+Crashlytics
+Device
+Kingfisher
+SwiftDate
+RxSwift
+RxAlamofire
+RSTUtils
+SwiftyJSON
 
 ## App architecture:
 
-    Model-View-ViewModel(MVVM)
+Model-View-ViewModel(MVVM)
 
-    ![MVVM](http://i.imgur.com/NHRPFsE.png)
+![MVVM](http://i.imgur.com/NHRPFsE.png)
 
 # Project structure:
 
-    * Resources - fonts, strings, images etc.
-    * SupportingFiles - configuration plist files
-    * Models - model objects
-    * Modules - contains app modules (UI + Code)
-    * Helpers - protocols, extension and utility classes
+* Resources - fonts, strings, images etc.
+* SupportingFiles - configuration plist files
+* Models - model objects
+* Modules - contains app modules (UI + Code)
+* Helpers - protocols, extension and utility classes
