@@ -12,6 +12,7 @@ Supports: iOS 9.x and above
     All dependencies are provided using CocoaPods. If for some reason dependency can't be added as pod, it will be in Library folder as source files.
 
     To install the dependencies run:
+
     ```
     pod install
     ```
@@ -30,7 +31,9 @@ Supports: iOS 9.x and above
 
 ## App architecture:
 
-    MVVM
+    Model-View-ViewModel(MVVM)
+
+    ![MVVM](http://i.imgur.com/NHRPFsE.png)
 
 # Project structure:
 
