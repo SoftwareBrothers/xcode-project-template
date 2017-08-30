@@ -17,7 +17,7 @@ We hope that providing this template will save project setup time and also provi
 The project uses Cookiecutter for project templating. To create a new project from this template just run:
 
 ```
-cookiecutter git@bitbucket.org:rstit/xcodeprojecttemplate.git
+cookiecutter https://github.com/rstgroup/xcode-project-template.git
 ```
 
 You will get a prompt to give a new app name. Thats it, you should have a new folder with your new app created based on this template!
