@@ -35,7 +35,7 @@ Model-View-ViewModel(MVVM)
 
 ![MVVM](http://i.imgur.com/gGvGSCa.png)
 
-# Project structure:
+## Project structure:
 
 * Resources - fonts, strings, images etc.
 * SupportingFiles - configuration plist files
