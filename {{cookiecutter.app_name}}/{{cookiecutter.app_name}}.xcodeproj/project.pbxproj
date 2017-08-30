@@ -15,6 +15,10 @@
 		2A9222821F38797600A648E6 /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9222811F38797600A648E6 /* ConfigurationManager.swift */; };
 		2ABEE6D41F38856A00531205 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ABEE6D31F38828A00531205 /* Configuration.plist */; };
 		2ABEE6D61F3886D700531205 /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEE6D51F3886D700531205 /* MainNavigator.swift */; };
+		FCB2C7C91F5710B000481080 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB2C7C81F5710B000481080 /* AlertPresenter.swift */; };
+		FCB2C7CB1F57127800481080 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCB2C7CA1F57127800481080 /* Localizable.strings */; };
+		FCB2C7CE1F57139E00481080 /* Localizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB2C7CD1F57139E00481080 /* Localizations.swift */; };
+		FCB2C7D01F57148E00481080 /* ActivityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB2C7CF1F57148E00481080 /* ActivityPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,10 @@
 		2A9222841F387B1D00A648E6 /* {{cookiecutter.app_name}}Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "{{cookiecutter.app_name}}Tests-Bridging-Header.h"; sourceTree = "<group>"; };
 		2ABEE6D31F38828A00531205 /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		2ABEE6D51F3886D700531205 /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
+		FCB2C7C81F5710B000481080 /* AlertPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
+		FCB2C7CA1F57127800481080 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		FCB2C7CD1F57139E00481080 /* Localizations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizations.swift; sourceTree = "<group>"; };
+		FCB2C7CF1F57148E00481080 /* ActivityPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +142,8 @@
 		2AB31DA11F38742A00B7D1F3 /* Translations */ = {
 			isa = PBXGroup;
 			children = (
+				FCB2C7CD1F57139E00481080 /* Localizations.swift */,
+				FCB2C7CA1F57127800481080 /* Localizable.strings */,
 			);
 			path = Translations;
 			sourceTree = "<group>";
@@ -141,6 +151,8 @@
 		2AB31DA21F38744600B7D1F3 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				FCB2C7C81F5710B000481080 /* AlertPresenter.swift */,
+				FCB2C7CF1F57148E00481080 /* ActivityPresenter.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -207,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A1E77501F384BFD006C84D4 /* Build configuration list for PBXNativeTarget "{{cookiecutter.app_name}}" */;
 			buildPhases = (
+				FCB2C7CC1F57132300481080 /* Laurine Generator */,
 				2A1E772F1F384BFC006C84D4 /* Sources */,
 				2A1E77301F384BFC006C84D4 /* Frameworks */,
 				2A1E77311F384BFC006C84D4 /* Resources */,
@@ -283,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ABEE6D41F38856A00531205 /* Configuration.plist in Resources */,
+				FCB2C7CB1F57127800481080 /* Localizable.strings in Resources */,
 				2A1E77411F384BFD006C84D4 /* LaunchScreen.storyboard in Resources */,
 				2A1E773E1F384BFD006C84D4 /* Assets.xcassets in Resources */,
 			);
@@ -297,6 +311,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FCB2C7CC1F57132300481080 /* Laurine Generator */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Laurine Generator";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -x\n\n# Get base path to project\nBASE_PATH=\"$PROJECT_DIR/$PROJECT_NAME\"\n\n#--------- START OF YOUR CONFIGURATION (change Path_To_.. to fit)\n\n# Get path to Laurine Generator script\nLAURINE_PATH=\"$BASE_PATH/Libraries/LaurineGenerator.swift\"\n\n# Get path to main localization file (usually english).\nSOURCE_PATH=\"$BASE_PATH/Resources/Translations/Localizable.strings\"\n\n# Get path to output. If you use ObjC version of output, set implementation file (.m), as header will be generated automatically\nOUTPUT_PATH=\"$BASE_PATH/Resources/Translations/Localizations.swift\"\n\n#--------- END OF YOUR CONFIGURATION\n\n# Add permission to generator for script execution\nchmod 755 \"$LAURINE_PATH\"\n\n# Actually generate output. -- CUSTOMIZE -- parameters to your needs (see documentation).\n# Will only re-generate script if something changed\nif [ \"$OUTPUT_PATH\" -ot \"$SOURCE_PATH\" ]; then\n\"$LAURINE_PATH\" -i \"$SOURCE_PATH\" -o \"$OUTPUT_PATH\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2A1E772F1F384BFC006C84D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -306,7 +337,10 @@
 				2ABEE6D61F3886D700531205 /* MainNavigator.swift in Sources */,
 				2A1E77371F384BFC006C84D4 /* AppDelegate.swift in Sources */,
 				2A1DD4E11F389E2100712195 /* NotificationsManager.swift in Sources */,
+				FCB2C7CE1F57139E00481080 /* Localizations.swift in Sources */,
 				2A1DD4DF1F389C2200712195 /* DeeplinkManager.swift in Sources */,
+				FCB2C7C91F5710B000481080 /* AlertPresenter.swift in Sources */,
+				FCB2C7D01F57148E00481080 /* ActivityPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
