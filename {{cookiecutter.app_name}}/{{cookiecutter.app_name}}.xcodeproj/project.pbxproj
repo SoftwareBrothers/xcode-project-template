@@ -219,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A1E77501F384BFD006C84D4 /* Build configuration list for PBXNativeTarget "{{cookiecutter.app_name}}" */;
 			buildPhases = (
+				FC5FF9B91F7D287600113740 /* Increment build on Nevercode */,
 				FCB2C7CC1F57132300481080 /* Laurine Generator */,
 				2A1E772F1F384BFC006C84D4 /* Sources */,
 				2A1E77301F384BFC006C84D4 /* Frameworks */,
@@ -312,6 +313,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		FC5FF9B91F7D287600113740 /* Increment build on Nevercode */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment build on Nevercode";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/BuildPhasesScripts/increment_build_number_on_ci.sh\"";
+		};
 		FCB2C7CC1F57132300481080 /* Laurine Generator */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
