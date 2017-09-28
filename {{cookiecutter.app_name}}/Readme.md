@@ -9,12 +9,24 @@ Supports: iOS 9.x and above
 
 ## Dependencies:
 
-All dependencies are provided using CocoaPods. If for some reason dependency can't be added as pod, it will be in Library folder as source files.
+The project is using cocoapods for managing external libraries and a Gemfile for managing the cocoapods version.
 
-To install the dependencies run:
+Get Bundler
 
 ```
-pod install
+sudo gem install bundler
+```
+
+To install the specific cocoapods version run
+
+```
+bundle install
+```
+
+Then install the pods
+
+```
+bundle exec pod install
 ```
 
 ### Core Dependencies
