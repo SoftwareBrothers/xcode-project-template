@@ -13,12 +13,12 @@ target '{{cookiecutter.app_name}}' do
     pod 'Crashlytics'
     pod 'Device', '~> 2.0'
     pod 'Kingfisher', '~> 3.0'
-    pod 'SwiftDate', '~>4.1'
+    pod 'SwiftDate', '~>4.3.0'
     pod 'RxSwift', '~>3.0'
     pod 'RxAlamofire', '~>3.0'
     pod 'RSTUtils', '~>1.0'
     pod 'SwiftyJSON', '~>3.0'
-    pod 'SwiftLint', '=>0.22.0'
+    pod 'SwiftLint', '0.22.0'
 
     target '{{cookiecutter.app_name}}Tests' do
         inherit! :search_paths
@@ -31,6 +31,7 @@ post_install do |installer|
       config.build_settings['EXPANDED_CODE_SIGN_IDENTITY'] = ""
       config.build_settings['CODE_SIGNING_REQUIRED'] = "NO"
       config.build_settings['CODE_SIGNING_ALLOWED'] = "NO"
+      config.build_settings['SWIFT_VERSION'] = '3.2'
     end
   end
 end
