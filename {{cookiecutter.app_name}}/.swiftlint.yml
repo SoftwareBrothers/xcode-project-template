@@ -25,10 +25,8 @@ opt_in_rules:
 excluded:
   - Carthage
   - Pods
-  - PrelinksScannerTests/generated
-  - PrelinksScanner/generated
-  - PrelinksScanner/RxOperators.swift
-  - PrelinksScanner/LaurineGenerator.swift
+  - ./{{cookiecutter.app_name}}/Libraries/LaurineGenerator.swift
+  - ./{{cookiecutter.app_name}}/Resources/Translations/Localizations.swift
 identifier_name:
   excluded:
     - id

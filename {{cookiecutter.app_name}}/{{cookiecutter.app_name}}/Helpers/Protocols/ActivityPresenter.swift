@@ -9,7 +9,7 @@
 import Foundation
 
 public protocol ActivityPresenter {
-    
+
     func showActivityIndicator()
     func hideActivityIndicator()
 }
