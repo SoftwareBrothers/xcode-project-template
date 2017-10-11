@@ -345,9 +345,9 @@ open class CommandLine {
             }
 
             /* Remove attached argument from flag */
-            let splitFlag = flagWithArg.split(by: ArgumentAttacher, maxSplits: 1)
-            let flag = splitFlag[0]
-            let attachedArg: String? = splitFlag.count == 2 ? splitFlag[1] : nil
+            let splitFlag = flagWithArg.split(separator: ArgumentAttacher, maxSplits: 1)
+            let flag = String(splitFlag[0])
+            let attachedArg: String? = splitFlag.count == 2 ? String(splitFlag[1]) : nil
 
             var flagMatched = false
             for option in _options where option.flagMatch(flag) {
@@ -884,14 +884,14 @@ internal extension String {
         for i in self.characters.indices {
             let c = self[i]
             if c == by && (maxSplits == 0 || numSplits < maxSplits) {
-                s.append(self[curIdx..<i])
+                s.append(String(self[curIdx..<i]))
                 curIdx = self.index(after: i)
                 numSplits += 1
             }
         }
 
         if curIdx != self.endIndex {
-            s.append(self[curIdx..<self.endIndex])
+            s.append(String(self[curIdx..<self.endIndex]))
         }
 
         return s
