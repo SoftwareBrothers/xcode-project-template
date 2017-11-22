@@ -558,7 +558,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rst-it.--cookiecutter-app-name--Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "{{cookiecutter.app_name}}Tests/HelpersTests/{{cookiecutter.app_name}}Tests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "{{cookiecutter.app_name}}Tests/{{cookiecutter.app_name}}Tests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -576,7 +576,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rst-it.--cookiecutter-app-name--Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "{{cookiecutter.app_name}}Tests/HelpersTests/{{cookiecutter.app_name}}Tests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "{{cookiecutter.app_name}}Tests/{{cookiecutter.app_name}}Tests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/{{cookiecutter.app_name}}.app/{{cookiecutter.app_name}}";
@@ -664,7 +664,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rst-it.--cookiecutter-app-name--Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "{{cookiecutter.app_name}}Tests/HelpersTests/{{cookiecutter.app_name}}Tests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "{{cookiecutter.app_name}}Tests/{{cookiecutter.app_name}}Tests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
