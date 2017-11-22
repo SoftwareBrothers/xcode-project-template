@@ -15,6 +15,9 @@
 		2A9222821F38797600A648E6 /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9222811F38797600A648E6 /* ConfigurationManager.swift */; };
 		2ABEE6D41F38856A00531205 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ABEE6D31F38828A00531205 /* Configuration.plist */; };
 		2ABEE6D61F3886D700531205 /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEE6D51F3886D700531205 /* MainNavigator.swift */; };
+		C90395241FC622D2006F1DC0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395231FC622D2006F1DC0 /* main.swift */; };
+		C90395261FC62399006F1DC0 /* TestsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395251FC62399006F1DC0 /* TestsAppDelegate.swift */; };
+		C90395271FC62425006F1DC0 /* TestsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395251FC62399006F1DC0 /* TestsAppDelegate.swift */; };
 		FCB2C7C91F5710B000481080 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB2C7C81F5710B000481080 /* AlertPresenter.swift */; };
 		FCB2C7CB1F57127800481080 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCB2C7CA1F57127800481080 /* Localizable.strings */; };
 		FCB2C7CE1F57139E00481080 /* Localizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB2C7CD1F57139E00481080 /* Localizations.swift */; };
@@ -45,6 +48,8 @@
 		2A9222841F387B1D00A648E6 /* {{cookiecutter.app_name}}Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "{{cookiecutter.app_name}}Tests-Bridging-Header.h"; sourceTree = "<group>"; };
 		2ABEE6D31F38828A00531205 /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		2ABEE6D51F3886D700531205 /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
+		C90395231FC622D2006F1DC0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C90395251FC62399006F1DC0 /* TestsAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsAppDelegate.swift; sourceTree = "<group>"; };
 		FCB2C7C81F5710B000481080 /* AlertPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
 		FCB2C7CA1F57127800481080 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		FCB2C7CD1F57139E00481080 /* Localizations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizations.swift; sourceTree = "<group>"; };
@@ -98,6 +103,7 @@
 		2A1E77351F384BFC006C84D4 /* {{cookiecutter.app_name}} */ = {
 			isa = PBXGroup;
 			children = (
+				C90395231FC622D2006F1DC0 /* main.swift */,
 				2A1E77361F384BFC006C84D4 /* AppDelegate.swift */,
 				2AFB31021F3853C6009C4586 /* Resources */,
 				2AFB31071F38542E009C4586 /* SupportingFiles */,
@@ -113,6 +119,7 @@
 			children = (
 				2A9222841F387B1D00A648E6 /* {{cookiecutter.app_name}}Tests-Bridging-Header.h */,
 				2A1E774D1F384BFD006C84D4 /* Info.plist */,
+				C90395251FC62399006F1DC0 /* TestsAppDelegate.swift */,
 			);
 			path = "{{cookiecutter.app_name}}Tests";
 			sourceTree = "<group>";
@@ -365,7 +372,9 @@
 			files = (
 				2A9222821F38797600A648E6 /* ConfigurationManager.swift in Sources */,
 				2ABEE6D61F3886D700531205 /* MainNavigator.swift in Sources */,
+				C90395241FC622D2006F1DC0 /* main.swift in Sources */,
 				2A1E77371F384BFC006C84D4 /* AppDelegate.swift in Sources */,
+				C90395271FC62425006F1DC0 /* TestsAppDelegate.swift in Sources */,
 				2A1DD4E11F389E2100712195 /* NotificationsManager.swift in Sources */,
 				FCB2C7CE1F57139E00481080 /* Localizations.swift in Sources */,
 				2A1DD4DF1F389C2200712195 /* DeeplinkManager.swift in Sources */,
@@ -378,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C90395261FC62399006F1DC0 /* TestsAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,7 +558,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rst-it.--cookiecutter-app-name--Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "{{cookiecutter.app_name}}Tests/HelpersTests/{{cookiecutter.app_name}}Tests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "{{cookiecutter.app_name}}Tests/{{cookiecutter.app_name}}Tests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -566,7 +576,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rst-it.--cookiecutter-app-name--Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "{{cookiecutter.app_name}}Tests/HelpersTests/{{cookiecutter.app_name}}Tests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "{{cookiecutter.app_name}}Tests/{{cookiecutter.app_name}}Tests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/{{cookiecutter.app_name}}.app/{{cookiecutter.app_name}}";
@@ -654,7 +664,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rst-it.--cookiecutter-app-name--Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "{{cookiecutter.app_name}}Tests/HelpersTests/{{cookiecutter.app_name}}Tests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "{{cookiecutter.app_name}}Tests/{{cookiecutter.app_name}}Tests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
