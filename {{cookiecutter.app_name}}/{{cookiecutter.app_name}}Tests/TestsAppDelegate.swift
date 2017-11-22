@@ -13,9 +13,6 @@ import UIKit
 class TestsAppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    lazy var navigator = MainNavigator.shared
-    lazy var deeplinkManager = DeeplinkManager.shared
-    lazy var notificationsManager = NotificationsManager.shared
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
