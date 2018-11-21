@@ -1,6 +1,6 @@
 ## XCodeProjectTemplate
 
-The official project template of the RST-IT iOS team. This template should be the common base for all new projects and ensures common project structure and foundation classes.
+The official project template of the SoftwareBrothers iOS team. This template should be the common base for all new projects and ensures common project structure and foundation classes.
 
 ## Motivation
 
@@ -16,7 +16,7 @@ We hope that providing this template will save project setup time and also provi
 The project uses Cookiecutter for project templating. To create a new project from this template just run:
 
 ```
-cookiecutter https://github.com/rstgroup/xcode-project-template.git
+cookiecutter https://github.com/SoftwareBrothers/xcode-project-template.git
 ```
 
 You will get a prompt to give a new app name. Thats it, you should have a new folder with your new app created based on this template!
@@ -39,3 +39,17 @@ Every team member is free to contribute to this template. Just create a fork and
 Contributors:
 
 - Piotr Gorzelany
+
+## License
+
+xcode-project-template is Copyright © 2018 SoftwareBrothers.co. It is free software, and may be redistributed under the terms specified in the [LICENSE](LICENSE) file.
+
+## About SoftwareBrothers.co
+
+<img src="https://softwarebrothers.co/assets/images/software-brothers-logo-full.svg" width=240>
+
+
+We’re an open, friendly team that helps clients from all over the world to transform their businesses and create astonishing products.
+
+* We are available to [hire](https://softwarebrothers.co/contact).
+* If you want to work for us - checkout the [career page](https://softwarebrothers.co/career).
